@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>images</title>
+    <style>
+        .container .box{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        
+        }
+        .container .box .col{
+            display: flex;
+            flex-direction: column;
+            width: 32.5%;
+        }
+        .container .box .col img{
+            width: 100%;
+            padding-bottom: 15px;
+        }
+        #btn{
+            width: 80px;
+            height: 40px;
+            background-color: white;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div align="center">
+        <input type="button" value="ALL" id="btn">
+        <input type="button" value="MOUNTAINS" id="btn" style="width: 150px; ;">
+        <input type="button" value="SEA" id="btn">
+    </div>
+    <div class="container"><br><br><br>
+        <div class="box">
+            <div class="col">
+                <img src="./images/beach-3.webp" alt="">
+                <img src="./images/mountain-1.jpg" alt="" height="610px">
+            </div>
+            <div class="col">
+                <img src="./images/mountain-2.jpg" alt="">
+                <img src="./images/beach-2.jpeg" alt="">
+            </div>
+            <div class="col">
+                <img src="./images/beach-1.jpg" alt="" height="230px">
+                <img src="./images/mountain-3.avif" alt="" height="610px">
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
